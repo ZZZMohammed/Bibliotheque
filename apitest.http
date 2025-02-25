@@ -1,0 +1,114 @@
+POST http://127.0.0.1:8000/api/login
+content-type: application/json
+
+{
+    "email": "cucefak00@mailinator.com",
+    "password": "cucefak00@mailinator.com"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/register
+content-type: application/json
+
+{
+    "nom": "cucefaky",
+    "prenom": "mailinator",
+    "tel":"0098366363846",
+    "email": "cucefak00@mailinator.com",
+    "password": "cucefak00@mailinator.com"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/logout
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzM5ODkzMTg2LCJleHAiOjE3Mzk4OTY3ODYsIm5iZiI6MTczOTg5MzE4NiwianRpIjoibDlZRlZ5S3lSb3hIaVk3RiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Z3b48hFOCyBQX_2Dp-j2iWc3nIEbEilk1WOdFCEfJ2Y
+
+###
+
+GET http://127.0.0.1:8000/api/books
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzM5ODk0NjI3LCJleHAiOjE3Mzk4OTgyMjcsIm5iZiI6MTczOTg5NDYyNywianRpIjoiUk5xZ21UZHlWVnJxcmlKeCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yIiwSgU6HZA9djTJQJt_XTkmEcPreggTq_9fsb6CUU4
+
+###
+
+POST http://127.0.0.1:8000/api/books
+Accept: application/json
+content-type: application/json 
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzM5ODk0NjI3LCJleHAiOjE3Mzk4OTgyMjcsIm5iZiI6MTczOTg5NDYyNywianRpIjoiUk5xZ21UZHlWVnJxcmlKeCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yIiwSgU6HZA9djTJQJt_XTkmEcPreggTq_9fsb6CUU4
+
+{
+    "designation": "Sample Book",
+    "description": "This is a sample book description",
+    "type": "Roman",
+    "langue": "Anglais",
+    "editeur": "Sample Publisher",
+    "categorie": "Fiction",
+    "prix": 29.99,
+    "auteur": "John Doe",
+    "cover": ""
+}
+
+###
+
+GET http://127.0.0.1:8000/api/books/4
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzM5ODk0NjI3LCJleHAiOjE3Mzk4OTgyMjcsIm5iZiI6MTczOTg5NDYyNywianRpIjoiUk5xZ21UZHlWVnJxcmlKeCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yIiwSgU6HZA9djTJQJt_XTkmEcPreggTq_9fsb6CUU4
+
+###
+
+PUT http://127.0.0.1:8000/api/books/4
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzM5ODk0NjI3LCJleHAiOjE3Mzk4OTgyMjcsIm5iZiI6MTczOTg5NDYyNywianRpIjoiUk5xZ21UZHlWVnJxcmlKeCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yIiwSgU6HZA9djTJQJt_XTkmEcPreggTq_9fsb6CUU4
+
+{
+    "designation": "Updated Book Title",
+    "description": "Updated book description",
+    "type": "Poésie",
+    "langue": "Francais",
+    "editeur": "New Publisher",
+    "categorie": "Classique",
+    "prix": 39.99,
+    "auteur": "Jane Doe",
+    "cover": "updated_cover.jpg"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/api/books/5
+Accept: application/json
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzM5ODk0NjI3LCJleHAiOjE3Mzk4OTgyMjcsIm5iZiI6MTczOTg5NDYyNywianRpIjoiUk5xZ21UZHlWVnJxcmlKeCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yIiwSgU6HZA9djTJQJt_XTkmEcPreggTq_9fsb6CUU4
+
+
+###
+
+POST http://127.0.0.1:8000/api/register
+Accept: application/json
+Content-Type: application/json
+
+{
+  "nom": "John",
+  "email": "john@example.com",
+  "password": "secret"
+}
+
+
+###
+
+POST http://127.0.0.1:8000/api/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "secret"
+}
+
+
+###
+
+POST http://127.0.0.1:8000/api/logout
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQwMjEzMjIyLCJleHAiOjE3NDAyMTY4MjIsIm5iZiI6MTc0MDIxMzIyMiwianRpIjoicDRlaFpwUFZwQ25IZlBRdCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.APNngjATUeM9uZA5afdumh9hDc3TqEmh8rhzwmwSC-8
