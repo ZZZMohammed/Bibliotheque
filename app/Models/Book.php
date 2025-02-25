@@ -13,4 +13,9 @@ class Book extends Model
     protected $fillable = ['designation', 'description', 'prix', 'auteur', 'cover'];
 
     protected $dates =['deleted_at'] ;
+
+
+
+
+    
 }

@@ -10,7 +10,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class DeleteBook
+class OperationLogged
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
@@ -19,9 +19,12 @@ class DeleteBook
      *
      * @return void
      */
-    public function __construct()
-    {
-        //
+    public $type, $table, $userId;
+
+    public function __construct($type, $table, $userId) {
+        $this->type = $type;
+        $this->table = $table;
+        $this->userId = $userId;
     }
 
     /**

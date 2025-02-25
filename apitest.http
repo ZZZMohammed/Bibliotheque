@@ -90,7 +90,7 @@ Content-Type: application/json
 
 {
   "nom": "John",
-  "email": "john@example.com",
+  "email": "john11@example.com",
   "password": "secret"
 }
 
@@ -102,7 +102,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "john@example.com",
+  "email": "john11@example.com",
   "password": "secret"
 }
 
@@ -111,4 +111,4 @@ Content-Type: application/json
 
 POST http://127.0.0.1:8000/api/logout
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQwMjEzMjIyLCJleHAiOjE3NDAyMTY4MjIsIm5iZiI6MTc0MDIxMzIyMiwianRpIjoicDRlaFpwUFZwQ25IZlBRdCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.APNngjATUeM9uZA5afdumh9hDc3TqEmh8rhzwmwSC-8
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQwNTAyOTk0LCJleHAiOjE3NDA1MDY1OTQsIm5iZiI6MTc0MDUwMjk5NCwianRpIjoiR1RrYms3bkFnSjZmWFp0aSIsInN1YiI6IjUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-4MlFjfWC5Dul12t5TuwdYy8xBBvkHqC8xPVGIOAhNE
